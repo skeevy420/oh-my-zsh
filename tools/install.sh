@@ -24,11 +24,11 @@ main() {
   # which may fail on systems lacking tput or terminfo
   set -e
 
-  CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
-  if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
-    printf "${YELLOW}Zsh is not installed!${NORMAL} Please install zsh first!\n"
-    exit
-  fi
+  #CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
+  #if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
+  #  printf "${YELLOW}Zsh is not installed!${NORMAL} Please install zsh first!\n"
+  #  exit
+  #fi
   unset CHECK_ZSH_INSTALLED
 
   if [ ! -n "$ZSH" ]; then
